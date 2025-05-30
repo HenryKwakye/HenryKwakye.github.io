@@ -31,7 +31,7 @@
 
 ## 📫 Let's Connect
 
-- 💼 [LinkedIn](www.linkedin.com/in/henrykwakye) *(add your profile link)*
+- 💼 [LinkedIn](www.linkedin.com/in/henrykwakye)
 - 📬 Reach me: `iamkobinahenry@gmail.com`
 
 ---
