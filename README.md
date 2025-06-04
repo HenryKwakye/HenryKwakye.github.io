@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Badkoby/Badkoby/main/analytical-bar-chart.svg" alt="Analytical Skills Animation" width="600"/>
+</p>
+
 # 👋 Hi, I'm badkoby!
 
 🎓 I'm an agricultural student with a deep curiosity for how technology—especially Artificial Intelligence—can reshape the future of food systems and sustainable farming. I code, analyze data, and design automation tools and bots.
