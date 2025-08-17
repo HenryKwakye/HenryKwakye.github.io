@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HK logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0d1117"/>
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="url(#g)"/>
+  <path d="M18 46V18h6v10h8V18h6v28h-6V34h-8v12h-6Zm30 0h-7.5c-1.4 0-2.6-.25-3.6-.76a6 6 0 0 1-2.38-2.16c-.55-.9-.82-1.95-.82-3.17 0-1.26.27-2.34.82-3.23a6 6 0 0 1 2.38-2.16c1-.5 2.2-.75 3.6-.75H42v-4h6v16Zm-6.5-4H42v-4h-.5c-.8 0-1.4.16-1.82.48-.42.3-.63.76-.63 1.36 0 .63.2 1.1.63 1.4.42.3 1.02.45 1.82.45Z" fill="#fff"/>
+</svg>

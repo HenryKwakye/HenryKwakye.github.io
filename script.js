@@ -258,3 +258,202 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// ========== ENHANCED ANIMATIONS & VISUAL EFFECTS ==========
+
+// Intersection Observer for scroll animations
+const animationObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            animationObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+// Observe elements for animations
+document.addEventListener('DOMContentLoaded', () => {
+    // Existing animation elements
+    const animateElements = document.querySelectorAll('.service-card, .stat-item, .contact-item, .fade-in-up, .fade-in-left');
+    
+    animateElements.forEach(el => {
+        if (!el.classList.contains('visible')) {
+            animationObserver.observe(el);
+        }
+    });
+
+    // Counter animation for hero stats
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                animateCounter(counter, target);
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        counterObserver.observe(counter);
+    });
+
+    // Parallax effect for hero section
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.3;
+            hero.style.transform = `translateY(${rate}px)`;
+        });
+    }
+
+    // Enhanced typing effect for hero title
+    const typewriterText = document.querySelector('.typewriter');
+    if (typewriterText) {
+        const text = typewriterText.textContent;
+        typewriterText.textContent = '';
+        typewriterText.style.borderRight = '3px solid var(--accent)';
+        
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typewriterText.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                // Remove cursor after typing is complete
+                setTimeout(() => {
+                    typewriterText.style.borderRight = 'none';
+                }, 1000);
+            }
+        }
+        
+        setTimeout(typeWriter, 1000); // Start after 1 second
+    }
+
+    // Add smooth hover effects to service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-15px) rotateX(5deg)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0) rotateX(0)';
+        });
+    });
+
+    // Enhanced button click effects
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple-effect');
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+
+    // Scroll progress indicator
+    const scrollProgress = document.createElement('div');
+    scrollProgress.id = 'scroll-progress';
+    scrollProgress.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent), var(--success));
+        z-index: 9999;
+        transition: width 0.1s ease;
+    `;
+    document.body.appendChild(scrollProgress);
+
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollProgress.style.width = scrolled + '%';
+    });
+});
+
+// Enhanced counter animation function
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+// Add enhanced ripple effect styles
+const enhancedStyles = document.createElement('style');
+enhancedStyles.textContent = `
+    .ripple-effect {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        transform: scale(0);
+        animation: ripple-animation 0.6s linear;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    .btn {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Smooth scrolling enhancement */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Enhanced loading animation */
+    .loaded {
+        animation: pageLoad 0.8s ease-in;
+    }
+    
+    @keyframes pageLoad {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(enhancedStyles);

@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HENRY KWAKYE - Landing Page</title>
-    <!-- Favicon configuration -->
-    <link rel="icon" type="image/jpeg" href="images/logo.jpg?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.jpg?v=4">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg?v=4">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.jpg?v=4">
-    <link rel="shortcut icon" href="images/logo.jpg?v=4">
-    <meta name="msapplication-TileImage" content="images/logo.jpg?v=4">
-    <meta name="theme-color" content="#6366f1">
+    <!-- Favicon (using existing JPEG as requested) -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg?v=1">
+    <link rel="shortcut icon" href="images/favicon.jpg?v=1">
+    <meta name="theme-color" content="#0d1117">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,7 +18,6 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#">
-                    <img src="images/logo.jpg" alt="Henry Kwakye" class="logo-img">
                     HENRY KWAKYE
                 </a>
             </div>
@@ -34,16 +29,13 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#portfolio" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a href="resume/resume.pdf" class="nav-link resume-link" target="_blank">Resume</a>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vRI340CEh-sUCbImO1M2v8r4jPWev4Es9tWVwfjHZ5jsRBxGhem64eD8QlE8AeIplgRRUJL_f_sPf5Z/pub" class="nav-link resume-link" target="_blank" rel="noopener noreferrer">CV</a>
                 </li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
@@ -56,6 +48,48 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-text animate-slide-up">
+                <p class="hero-subtitle animate-slide-up delay-1">
+                    Agriculture → Data Analytics → Machine Learning → Agricultural AI
+                    <br><br>
+                    Agronomist + Data Scientist + Python Developer
+                    <br><br>
+                    Data >< Agriculture >< Technology
+                    <br><br>
+                    Self-Taught Learner <-> Problem Solver <-> Innovation Driver
+                </p>
+                <div class="hero-buttons animate-slide-up delay-2">
+                    <a href="projects.html#overview" class="btn btn-primary pulse-hover">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary glass-hover">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-float">
+                <div class="tech-orbit">
+                    <div class="orbit-center">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="orbit-item orbit-item-1">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="orbit-item orbit-item-2">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="orbit-item orbit-item-3">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="orbit-item orbit-item-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow animate-bounce">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -63,88 +97,20 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>Bridging agriculture and technology through data-driven solutions</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>My Journey</h3>
-                    <p>I'm a passionate agricultural data scientist with a unique blend of agricultural expertise and cutting-edge technology skills. With a BSc in Agriculture from KNUST and currently pursuing my MSc in Agronomy at UCC, I bridge the gap between traditional agriculture and modern data science.</p>
-                    
-                    <p>What sets me apart is my self-driven journey into data analytics and machine learning. Through platforms like FreeCodecamp, DataCamp, and countless YouTube tutorials, I've mastered Python, SQL, and advanced data science techniques, earning multiple certifications along the way.</p>
-                    
-                    <ul class="feature-list">
-                        <li><i class="fas fa-graduation-cap"></i> BSc Agriculture (KNUST) + MSc Agronomy (UCC) - In Progress</li>
-                        <li><i class="fas fa-certificate"></i> Python & SQL Certified (FreeCodecamp, DataCamp)</li>
-                        <li><i class="fas fa-brain"></i> Self-Taught ML & Data Science Expert</li>
-                        <li><i class="fas fa-seedling"></i> Agricultural Domain Knowledge</li>
-                        <li><i class="fas fa-chart-line"></i> Process-Based Crop Modeling (DSSAT, APSIM)</li>
-                        <li><i class="fas fa-rocket"></i> Continuous Learning Mindset</li>
-                    </ul>
+                    <p>Aspiring agricultural data scientist with a strong foundation in agronomy and a growing skill set in data analytics, coding, and machine learning. Holds a BSc in Agriculture from KNUST and currently pursuing an MPhil Crop Science, majoring in Agronomy at UCC. Combining academic expertise in crop science with self-directed learning in Python, SQL, and data visualization through platforms such as FreeCodeCamp and DataCamp. Passionate about bridging the gap between traditional farming practices and data-driven innovation to enhance productivity, sustainability, and climate resilience.</p>
                     
                     <div class="skills-inline">
                         <h4>Core Skills:</h4>
                         <div class="skills-tags">
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Excel</span>
-                            <span class="skill-tag">PowerBI</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag hover-glow">SQL</span>
+                            <span class="skill-tag hover-glow">Excel</span>
+                            <span class="skill-tag hover-glow">PowerBI</span>
+                            <span class="skill-tag hover-glow">Python</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>What I Do</h2>
-                <p>Specialized services in data science and automation</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Data Analysis & Visualization</h3>
-                    <p>Transform raw data into meaningful insights through comprehensive analysis and compelling visualizations using Python, R, and modern visualization tools.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Develop predictive models and intelligent systems using machine learning algorithms to solve complex business problems and automate decision-making.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Data Engineering</h3>
-                    <p>Build robust data pipelines, ETL processes, and scalable infrastructure to efficiently collect, process, and store large volumes of data.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database Management</h3>
-                    <p>Design, optimize, and manage databases including SQL and NoSQL systems to ensure efficient data storage, retrieval, and performance.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python Automation</h3>
-                    <p>Create automated workflows and scripts to streamline repetitive tasks, improve productivity, and reduce manual errors in business processes.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Crop Simulation & Modeling</h3>
-                    <p>Advanced crop growth simulation using process-based models like DSSAT, APSIM, and other agricultural decision support systems for yield prediction and optimization.</p>
                 </div>
             </div>
         </div>
@@ -154,20 +120,20 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2>My Portfolio</h2>
+                <h2>Projects</h2>
                 <p>Showcasing my data science and technical projects</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Data+Visualization" alt="Data Analysis Project">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&auto=format" alt="Data Analysis">
+                        <div class="portfolio-label">Data Analysis</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Data Analysis & Visualization</h3>
-                                <p>Interactive dashboards and statistical analysis with Python, Pandas, and Matplotlib</p>
+                                <h3>Data Analysis</h3>
+                                <p>Interactive dashboards and statistical analysis with Python, Pandas, Matplotlib, and Power BI</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#data-analysis" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -175,14 +141,14 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=ML+Models" alt="Machine Learning Project">
+                        <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=400&h=300&fit=crop&auto=format" alt="Machine Learning">
+                        <div class="portfolio-label">Machine Learning</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Machine Learning Models</h3>
+                                <h3>Machine Learning</h3>
                                 <p>Predictive modeling and classification algorithms using scikit-learn and TensorFlow</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#machine-learning" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -190,14 +156,14 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Data+Pipeline" alt="Data Engineering Project">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=300&fit=crop&auto=format" alt="Data Engineering">
+                        <div class="portfolio-label">Data Engineering</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Data Engineering Pipeline</h3>
+                                <h3>Data Engineering</h3>
                                 <p>Automated ETL processes and data pipeline architecture for large-scale datasets</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#data-engineering" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -205,14 +171,14 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Database+System" alt="Database Management Project">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&auto=format" alt="Apps">
+                        <div class="portfolio-label">Apps</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Database Management System</h3>
+                                <h3>Apps</h3>
                                 <p>Optimized database design and management with SQL, PostgreSQL, and MongoDB</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#web-apps" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +186,14 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Python+Automation" alt="Python Automation Project">
+                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop&auto=format" alt="Python Automation">
+                        <div class="portfolio-label">Python Automation</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Python Automation Scripts</h3>
+                                <h3>Python Automation</h3>
                                 <p>Automated workflows and data processing scripts for enhanced productivity</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#automation" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -235,14 +201,14 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Agricultural+AI" alt="Agricultural Analysis Project">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=300&fit=crop&auto=format" alt="Agricultural Project">
+                        <div class="portfolio-label">Agricultural Project</div>
                         <div class="portfolio-overlay">
                             <div class="portfolio-content">
-                                <h3>Agricultural Data Analytics</h3>
+                                <h3>Agricultural Project</h3>
                                 <p>AI-powered crop analysis and agricultural optimization using satellite data</p>
                                 <div class="portfolio-links">
-                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                    <a href="projects.html#agricultural" class="learn-more-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -299,10 +265,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/henrykwakye" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/henrykwakye" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:iamkobinahenry@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">

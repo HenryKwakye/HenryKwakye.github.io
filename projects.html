@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Henry Kwakye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="projects-styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+</head>
+<body>
+    <div class="projects-container">
+        <!-- Left Sidebar Menu -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Henry Kwakye" class="logo-img">
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="menu-item active" data-category="overview">
+                    <i class="fas fa-home"></i>
+                    <span>Overview</span>
+                </li>
+                <li class="menu-item" data-category="data-analysis">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Data Analysis</span>
+                </li>
+                <li class="menu-item" data-category="machine-learning">
+                    <i class="fas fa-brain"></i>
+                    <span>Machine Learning</span>
+                </li>
+                <li class="menu-item" data-category="data-engineering">
+                    <i class="fas fa-database"></i>
+                    <span>Data Engineering</span>
+                </li>
+                <li class="menu-item" data-category="web-apps">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Applications</span>
+                </li>
+                <li class="menu-item" data-category="automation">
+                    <i class="fas fa-cogs"></i>
+                    <span>Python Automation</span>
+                </li>
+                <li class="menu-item" data-category="agricultural">
+                    <i class="fas fa-seedling"></i>
+                    <span>Agricultural Projects</span>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+                <a href="https://github.com/henrykwakye" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View All on GitHub</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1 id="category-title">Overview</h1>
+                <div class="project-count">
+                    <span id="project-count">Welcome to my projects</span>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <!-- Overview Content -->
+                <div id="overview-content" class="category-content active">
+                    <div class="overview-welcome">
+                        <div class="welcome-card">
+                            <h2>Welcome to My Projects Portfolio</h2>
+                            <p>Explore my journey through data science, agriculture, and technology. Each project represents a step in my evolution from traditional agriculture to data-driven agricultural innovation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-overview">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>45+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>8</h3>
+                                <p>Programming Languages</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>12</h3>
+                                <p>Data Analysis Projects</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>6</h3>
+                                <p>ML Models Built</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="categories-preview">
+                        <h3>Project Categories</h3>
+                        <div class="category-cards">
+                            <div class="category-card" data-category="featured">
+                                <i class="fas fa-star"></i>
+                                <h4>Featured Projects</h4>
+                                <p>My best and most impactful projects</p>
+                            </div>
+                            <div class="category-card" data-category="data-analysis">
+                                <i class="fas fa-chart-bar"></i>
+                                <h4>Data Analysis</h4>
+                                <p>Insights from agricultural and business data</p>
+                            </div>
+                            <div class="category-card" data-category="machine-learning">
+                                <i class="fas fa-brain"></i>
+                                <h4>Machine Learning</h4>
+                                <p>Predictive models for agricultural optimization</p>
+                            </div>
+                            <div class="category-card" data-category="agricultural">
+                                <i class="fas fa-seedling"></i>
+                                <h4>Agricultural Projects</h4>
+                                <p>Technology solutions for modern farming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis Projects -->
+                <div id="data-analysis-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&auto=format" alt="Sales Analytics">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Sales Performance Dashboard</h4>
+                                <p>Interactive dashboard analyzing sales trends and performance metrics using Power BI.</p>
+                                <div class="tech-tags">
+                                    <span>Power BI</span>
+                                    <span>SQL</span>
+                                    <span>Excel</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&auto=format" alt="Data Visualization">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Agricultural Data Visualization</h4>
+                                <p>Comprehensive analysis and visualization of crop production data across different regions.</p>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>Matplotlib</span>
+                                    <span>Seaborn</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning Projects -->
+                <div id="machine-learning-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=400&h=300&fit=crop&auto=format" alt="ML Model">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Price Prediction Model</h4>
+                                <p>Machine learning model predicting commodity prices based on market trends and weather data.</p>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>XGBoost</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other categories will have similar structure -->
+                <div id="data-engineering-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=300&fit=crop&auto=format" alt="Data Pipeline">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Real-time Data Pipeline</h4>
+                                <p>Scalable ETL pipeline processing agricultural sensor data in real-time.</p>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>Apache Kafka</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web-apps-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&auto=format" alt="Web App">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Crop Monitor Web App</h4>
+                                <p>Web application for monitoring crop health using IoT sensor data and weather APIs.</p>
+                                <div class="tech-tags">
+                                    <span>React</span>
+                                    <span>Flask</span>
+                                    <span>SQLite</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="automation-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop&auto=format" alt="Automation">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Weather Data Scraper</h4>
+                                <p>Automated Python script that collects and processes weather data from multiple sources.</p>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>BeautifulSoup</span>
+                                    <span>Pandas</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="agricultural-content" class="category-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=300&fit=crop&auto=format" alt="Agricultural Project">
+                            </div>
+                            <div class="project-card-content">
+                                <h4>Smart Irrigation System</h4>
+                                <p>IoT-based irrigation system that optimizes water usage based on soil moisture and weather data.</p>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>Raspberry Pi</span>
+                                    <span>IoT Sensors</span>
+                                </div>
+                                <div class="card-links">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="projects-script.js"></script>
+</body>
+</html>
